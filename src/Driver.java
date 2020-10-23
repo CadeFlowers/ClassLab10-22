@@ -11,9 +11,10 @@ public class Driver
 		System.out.println(myBag);
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter in distance:");
-		String answer = input.nextLine();
+		String distanceEntered = input.nextLine();
 		input.close();
-		System.out.println(answer);
-		//GolfClub answer = myBag.findBestClub(input);
+		System.out.println(distanceEntered);
+		int InputB = Integer.parseInt(distanceEntered);
+		GolfClub answer = myBag.findBestClub(InputB);
 	}
 }

@@ -14,10 +14,17 @@ public class GolfClub
 		this.name = parts[0];
 		this.distance = Integer.parseInt(parts[1]);		
 	}
-	public searchDistance(string x) 
+	public int searchDistance(int x) 
 	{
-		return this.distance.indexOf(x)
-	}
+		if(distance == x) 
+		{
+			return this.distance;
+		}
+		else 
+		{
+		return 0; 
+		}
+	} 
 	public void display() 
 	{
 		System.out.println("Name:" + name + "  Distance:" + distance);

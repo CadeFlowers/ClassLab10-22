@@ -28,4 +28,15 @@ public class GolfBag
 			e.printStackTrace();
 		}
 	}
+	public GolfClub findBestClub(int c) throws Exception
+	{
+		for(GolfClub aClub : this.GolfBag) 
+		{
+			if(aClub.searchDistance(c)) 
+			{
+				return aClub;
+			}
+		}
+		throw new Exception("Distance not found");
+	}
 }
